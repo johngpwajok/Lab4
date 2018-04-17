@@ -20,15 +20,19 @@ class Product
  {
  printf("Product %s, price %4.1f and balance %d pcs", $this->name,$this->price,$this->amount);
  }
-}
-
-public function changeAmount($newvalue) {
+ public function  changePrice(newPrice)  {
+ 	$this->price = newPrice;
+ }
+  public function changeAmount($newvalue) {
 	$this->price = $newvalue;
+  }
 }
 $product = new Product("Edam", 3.3, 120);
 printf("Product value is %4.1f", $product->countValue());
 echo "<br>";
 $product->printProduct();
 
+
 $product->changeAmount(245);
+$product->changePrice(4.1);
 ?>
