@@ -20,7 +20,6 @@ class Product
  {
  printf("Product %s, price %4.1f and balance %d pcs", $this->name,$this->price,$this->amount);
  }
-
  public function  changePrice(newPrice)  {
  	$this->price = newPrice;
  }
